@@ -10,9 +10,37 @@ const Projects = () => {
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "AI Integration"],
       type: "Web Application",
       features: ["AI Design Assistant", "Contact Forms", "Responsive Design", "Static Deployment"],
-      githubUrl: "https://github.com/SouravRanjanVerma012/SPA_For_AshterDesigns",
+      githubUrl: "https://github.com/SouravRanjanVerma12/SPA_For_AshterDesigns",
       liveUrl: "https://ashterdesigns.vercel.app",
       emoji: "🎨"
+    },
+    {
+      title: "FitForge Buddy",
+      description: "Developed a cross-platform fitness app with workout tracking, nutrition management, and social features using React.js and Tailwind CSS. Leveraged AI tools to streamline design and development.",
+      technologies: ["React.js", "Tailwind CSS", "AI Tools"],
+      type: "Web/Mobile App",
+      features: ["Workout tracking", "Nutrition management", "Social features", "Cross-platform"],
+      githubUrl: "https://github.com/SouravRanjanVerma12/fitforge-buddy",
+      liveUrl: "https://fitforge-buddy.vercel.app/",
+      emoji: "💪"
+    },
+    {
+      title: "D2D Cart Admin Panel",
+      description: "Designed and developed a fully responsive Angular admin panel for D2D Cart, enabling seamless product, category, order, and customer management. Optimized for desktops, tablets, and mobiles.",
+      technologies: ["Angular", "JavaScript", "REST API", "Tailwind CSS"],
+      type: "Web Application",
+      features: ["Real-time data management", "Role-based access", "Advanced Dashboard Analytics", "Product & Order Management"],
+      githubUrl: "https://github.com/SouravRanjanVerma12/codknox_fetchit",
+      emoji: "🛒"
+    },
+    {
+      title: "Virtual Bus Conductor",
+      description: "Developed an interactive virtual bus conductor website using HTML, CSS, and JavaScript (DOM). Helps people book tickets while travelling through government transports. (IoT Integration)",
+      technologies: ["HTML", "CSS", "JavaScript", "DOM", "IoT"],
+      type: "Web Application",
+      features: ["Bus ticket booking", "Interactive UI", "Route management", "Real-time updates"],
+      githubUrl: "https://github.com/SouravRanjanVerma12/Virtual-bus-services",
+      emoji: "🚌"
     },
     {
       title: "Attendance Management System",
@@ -20,34 +48,8 @@ const Projects = () => {
       technologies: ["JavaScript", "Firebase", "EmailJS", "Geolocation API"],
       type: "Web Application",
       features: ["Real-time location tracking", "OTP verification", "Database integration", "Employee management"],
-      githubUrl: "https://github.com/SouravRanjanVerma012/attendance-management-system",
+      githubUrl: "https://github.com/SouravRanjanVerma12/attendance-management-system",
       emoji: "📊"
-    },
-    {
-      title: "Virtual Bus Services",
-      description: "Web application that allows users to book bus tickets, check bus locations, and view routes. Built with Node.js, Express, MongoDB, and modern web technologies.",
-      technologies: ["Node.js", "Express", "MongoDB", "HTML", "CSS", "JavaScript"],
-      type: "Web Application",
-      features: ["Bus ticket booking", "Route management", "Payment integration", "Real-time tracking"],
-      githubUrl: "https://github.com/SouravRanjanVerma012/Virtual-bus-services",
-      emoji: "🚌"
-    },
-    {
-      title: "FitForge Buddy",
-      description: "Cross-platform fitness app with workout tracking, nutrition management, and social features. Developed using React.js, React Native, and Tailwind CSS with AI-powered design tools.",
-      technologies: ["React.js", "React Native", "Tailwind CSS", "AI Tools"],
-      type: "Web/Mobile App",
-      features: ["Workout tracking", "Nutrition management", "Social features", "Cross-platform"],
-      githubUrl: "https://github.com/SouravRanjanVerma012/fitforge-buddy",
-      emoji: "💪"
-    }
-    ,{
-      title: "D2D Cart Admin Panel",
-      description: "Designed and developed a fully responsive Angular admin panel for D2D Cart enabling seamless product, category, order, and customer management. Optimized for desktops, tablets, and mobiles",
-      technologies: ["JavaScript", "Angular", " API"],
-      type: "Web Application",
-      features: ["Real-time data management", "Role-based access", "Advanced Dashboard Analytics", "Seamless management of products, categories, customers"],
-      githubUrl: "https://github.com/SouravRanjanVerma012/codknox_fetchit"
     }
   ];
 
@@ -121,9 +123,9 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
+                  <Button
+                    size="sm"
+                    variant="outline"
                     className="flex-1"
                     onClick={() => window.open(project.githubUrl, '_blank')}
                   >
@@ -131,9 +133,9 @@ const Projects = () => {
                     View Code
                   </Button>
                   {project.liveUrl && (
-                    <Button 
-                      size="sm" 
-                      variant="default" 
+                    <Button
+                      size="sm"
+                      variant="default"
                       className="flex-1"
                       onClick={() => window.open(project.liveUrl, '_blank')}
                     >

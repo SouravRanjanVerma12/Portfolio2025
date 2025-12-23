@@ -10,7 +10,7 @@ const Header = () => {
   const toggleTheme = () => {
     const newTheme = !isDarkMode;
     setIsDarkMode(newTheme);
-    
+
     if (newTheme) {
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
@@ -24,7 +24,7 @@ const Header = () => {
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setIsDarkMode(true);
       document.documentElement.classList.add('dark');
@@ -34,6 +34,7 @@ const Header = () => {
   const navigation = [
     { name: "Home", href: "#home" },
     { name: "Skills", href: "#skills" },
+    { name: "Experience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
     { name: "Services", href: "#services" },
@@ -60,7 +61,7 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            
+
             {/* Theme Toggle Button */}
             <Button
               variant="ghost"
@@ -115,7 +116,7 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              
+
               {/* Theme Toggle in Mobile Menu */}
               <div className="flex items-center justify-between pt-2 border-t border-border mt-2">
                 <span className="text-sm font-medium text-muted-foreground">Theme</span>

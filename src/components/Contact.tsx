@@ -5,15 +5,16 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import emailjs from '@emailjs/browser';
-import { 
-  Mail, 
-  Phone, 
-  MessageCircle, 
-  Github, 
-  Linkedin, 
+import {
+  Mail,
+  Phone,
+  MessageCircle,
+  Github,
+  Linkedin,
   Instagram,
   Facebook,
   Twitter,
+  MapPin,
   X,
   Send,
   Loader2
@@ -69,7 +70,7 @@ const Contact = () => {
       console.log('Email sent successfully:', result);
       setSubmitStatus('success');
       setFormData({ name: "", email: "", subject: "", message: "" });
-      
+
       // Close modal after 3 seconds
       setTimeout(() => {
         setIsModalOpen(false);
@@ -102,12 +103,18 @@ const Contact = () => {
       label: "WhatsApp",
       value: "Chat with me",
       href: "https://wa.me/916207841629"
+    },
+    {
+      icon: MapPin,
+      label: "Address",
+      value: "Mohali, Punjab",
+      href: "#"
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/SouravRanjanVerma012", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/sourav-ranjan-verma/", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/SouravRanjanVerma12", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/souravranjan-verma-b59292143/", label: "LinkedIn" },
     { icon: Instagram, href: "https://www.instagram.com/sourav_ranjan_verma/", label: "Instagram" },
     { icon: Twitter, href: "https://x.com/MecEmperor15788", label: "Twitter" },
   ];
@@ -153,8 +160,8 @@ const Contact = () => {
         {/* CTA Section */}
         <div className="text-center mb-12">
           <h3 className="text-2xl font-bold mb-4">Ready to start your next project?</h3>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="group"
             onClick={() => setIsModalOpen(true)}
           >
@@ -203,7 +210,7 @@ const Contact = () => {
                   <X className="h-4 w-4" />
                 </Button>
               </div>
-              
+
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <Label htmlFor="name">Name</Label>
@@ -216,7 +223,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="email">Email</Label>
                   <Input
@@ -229,7 +236,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="subject">Subject</Label>
                   <Input
@@ -241,7 +248,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <Label htmlFor="message">Message</Label>
                   <Textarea
@@ -254,10 +261,10 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full group" 
+
+                <Button
+                  type="submit"
+                  className="w-full group"
                   disabled={isLoading}
                 >
                   {isLoading ? (
@@ -279,7 +286,7 @@ const Contact = () => {
                     ✅ Email sent successfully! I'll get back to you soon.
                   </div>
                 )}
-                
+
                 {submitStatus === 'error' && (
                   <div className="text-red-600 text-sm text-center bg-red-50 p-3 rounded-md">
                     ❌ Failed to send message. Please try again or contact directly via email.

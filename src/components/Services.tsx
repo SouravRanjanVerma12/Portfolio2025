@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Monitor, 
-  Code, 
-  Palette, 
-  Layers, 
-  Camera, 
+import {
+  Monitor,
+  Code,
+  Palette,
+  Layers,
+  Camera,
   Smartphone,
   Search,
   Mail,
@@ -29,7 +29,7 @@ const Services = () => {
     {
       icon: Smartphone,
       title: "Cross-Platform Apps",
-      description: "Developing mobile and web applications using React Native and progressive web technologies."
+      description: "Developing mobile and web applications using progressive web technologies."
     },
     {
       icon: Search,
@@ -53,28 +53,28 @@ const Services = () => {
     },
     {
       icon: TrendingUp,
-      title: "AI-Powered Development",
-      description: "Leveraging AI tools like Claude, Cursor, and ChatGPT to streamline development processes."
+      title: "AI & Workflow Automation",
+      description: "Leveraging AI tools and n8n to build automated workflows and streamline development processes."
     },
     {
       icon: Box,
-      title: "System Architecture",
-      description: "Designing scalable and efficient system architectures for web and mobile applications."
+      title: "CI/CD & Kubernetes",
+      description: "Setting up automated pipelines and managing containerized applications with Docker and Kubernetes."
+    },
+    {
+      icon: TrendingUp,
+      title: "Payment Integration",
+      description: "Implementing secure payment gateways like Razorpay for seamless e-commerce transactions."
     },
     {
       icon: Palette,
       title: "UI/UX Implementation",
-      description: "Converting designs into functional interfaces with attention to user experience and accessibility."
+      description: "Converting designs into functional interfaces with tools like Tailwind CSS and modern web standards."
     },
     {
-      icon: Camera,
-      title: "API Development",
-      description: "Creating robust RESTful APIs and integrating third-party services for enhanced functionality."
-    },
-    {
-      icon: Instagram,
-      title: "Version Control",
-      description: "Managing code repositories and collaborative development using Git and modern workflows."
+      icon: Search,
+      title: "SQL & NoSQL Databases",
+      description: "Expertise in designing and managing databases using MySQL, MongoDB, and Firebase."
     }
   ];
 

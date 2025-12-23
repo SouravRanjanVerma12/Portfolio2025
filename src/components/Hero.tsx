@@ -8,7 +8,7 @@ const Hero = () => {
     link.href = '/Sourav_Verma_CV.pdf';
     link.download = 'Sourav_Verma_CV.pdf';
     link.target = '_blank';
-    
+
     // Append to body, click, and remove
     document.body.appendChild(link);
     link.click();
@@ -33,21 +33,21 @@ const Hero = () => {
           <h1 className="text-hero mb-6 text-gradient leading-tight">
             Sourav Verma
           </h1>
-          
+
           <div className="text-2xl md:text-3xl mb-6 text-muted-foreground font-light">
-            I'm a <span className="text-foreground font-semibold">MERN Stack Developer</span>
+            I'm a <span className="text-foreground font-semibold">Full Stack Developer</span>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-            Motivated MCA graduate and MERN stack developer skilled in building dynamic web applications. 
-            Experienced in creating efficient solutions like Virtual Bus Services and Attendance Management System, 
-            committed to leveraging technical expertise for organizational success as a fresher developer.
+            Motivated MCA student and full stack developer skilled in building dynamic web applications.
+            Experienced in creating efficient solutions like Virtual Bus Conductor and Attendance Management System,
+            committed to leveraging technical expertise for organisational success and staying updated with industry trends.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               className="group"
               onClick={() => {
                 const projectsSection = document.getElementById('projects');
@@ -59,10 +59,10 @@ const Hero = () => {
               View My Work
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg" 
+
+            <Button
+              variant="outline"
+              size="lg"
               className="group"
               onClick={handleDownloadCV}
             >
