@@ -2,20 +2,20 @@ import { Progress } from "@/components/ui/progress";
 
 const Skills = () => {
   const skills = [
-    { name: "React", level: 90 },
-    { name: "Node.js / Express", level: 85 },
-    { name: "Angular", level: 85 },
-    { name: "Vue.js", level: 80 },
-    { name: "JavaScript / TypeScript", level: 90 },
-    { name: "HTML / CSS / Tailwind", level: 95 },
-    { name: "MongoDB / Firebase", level: 85 },
-    { name: "MySQL / SQL", level: 80 },
-    { name: "Docker / Kubernetes", level: 85 },
-    { name: "Git / CI/CD Pipeline", level: 85 },
-    { name: "Appwrite / Cloudinary", level: 75 },
-    { name: "GSAP / Animations", level: 75 },
-    { name: "Razorpay Integration", level: 80 },
-    { name: "n8n Automation", level: 65 },
+    { name: "React", level: 90, logo: "https://cdn.simpleicons.org/react" },
+    { name: "Node.js / Express", level: 85, logo: "https://cdn.simpleicons.org/nodedotjs" },
+    { name: "Angular", level: 85, logo: "https://cdn.simpleicons.org/angular" },
+    { name: "Vue.js", level: 80, logo: "https://cdn.simpleicons.org/vuedotjs" },
+    { name: "JavaScript / TypeScript", level: 90, logo: "https://cdn.simpleicons.org/typescript" },
+    { name: "HTML / CSS / Tailwind", level: 95, logo: "https://cdn.simpleicons.org/tailwindcss" },
+    { name: "MongoDB / Firebase", level: 85, logo: "https://cdn.simpleicons.org/mongodb" },
+    { name: "MySQL / SQL", level: 80, logo: "https://cdn.simpleicons.org/mysql" },
+    { name: "Docker / Kubernetes", level: 85, logo: "https://cdn.simpleicons.org/docker" },
+    { name: "Git / CI/CD", level: 85, logo: "https://cdn.simpleicons.org/git" },
+    { name: "Appwrite / Cloudinary", level: 75, logo: "https://cdn.simpleicons.org/appwrite" },
+    { name: "GSAP / Animations", level: 75, logo: "https://cdn.simpleicons.org/greensock" },
+    { name: "Razorpay", level: 80, logo: "https://cdn.simpleicons.org/razorpay" },
+    { name: "n8n Automation", level: 65, logo: "https://cdn.simpleicons.org/n8n" },
   ];
 
   return (
@@ -36,7 +36,12 @@ const Skills = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex justify-between items-center mb-3">
-                <span className="text-lg font-semibold">{skill.name}</span>
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 flex items-center justify-center p-1 bg-white rounded-md shadow-sm border border-border">
+                    <img src={skill.logo} alt={skill.name} className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-lg font-semibold">{skill.name}</span>
+                </div>
                 <span className="text-sm text-muted-foreground">{skill.level}%</span>
               </div>
               <Progress value={skill.level} className="h-2" />
