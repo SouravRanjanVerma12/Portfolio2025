@@ -3,18 +3,19 @@ import { Progress } from "@/components/ui/progress";
 const Skills = () => {
   const skills = [
     { name: "React", level: 90 },
-    { name: "Angular", level: 90 },
-    { name: "JavaScript", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "MongoDB", level: 75 },
-    { name: "HTML/CSS", level: 90 },
-    { name: "Tailwind CSS", level: 85 },
-    { name: "Python", level: 70 },
-    { name: "C/C++", level: 75 },
-    { name: "MySQL", level: 80 },
-    { name: "Firebase", level: 75 },
-    { name: "Git", level: 80 },
-    { name: "Razorpay", level: 75 },
+    { name: "Node.js / Express", level: 85 },
+    { name: "Angular", level: 85 },
+    { name: "Vue.js", level: 80 },
+    { name: "JavaScript / TypeScript", level: 90 },
+    { name: "HTML / CSS / Tailwind", level: 95 },
+    { name: "MongoDB / Firebase", level: 85 },
+    { name: "MySQL / SQL", level: 80 },
+    { name: "Docker / Kubernetes", level: 85 },
+    { name: "Git / CI/CD Pipeline", level: 85 },
+    { name: "Appwrite / Cloudinary", level: 75 },
+    { name: "GSAP / Animations", level: 75 },
+    { name: "Razorpay Integration", level: 80 },
+    { name: "n8n Automation", level: 65 },
   ];
 
   return (
@@ -47,8 +48,8 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="animate-fade-in">
-              <h3 className="text-2xl font-bold text-foreground mb-2">2+</h3>
-              <p className="text-muted-foreground">Years Experience</p>
+              <h3 className="text-2xl font-bold text-foreground mb-2">5+ Months</h3>
+              <p className="text-muted-foreground">Professional Experience</p>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <h3 className="text-2xl font-bold text-foreground mb-2">10+</h3>
